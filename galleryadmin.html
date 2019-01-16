@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="page.css">
+    </head>
+
+    <body>
+        
+        
+    <div class="menu3">
+      <div class="left"><h4>Pooja Reddy Kalagiri</h4></div>
+      <div class="right"><ul>
+         <li><a href="index.html" id="onlink">HOME</a></li>
+         <li><a href="about.html">ABOUT ME</a></li>
+         <li><a href="contact.html">CONTACT</a></li>
+         <li><a href="gallery.html">GALLERY</a></li>
+         <li><a href="galleryadmin.html">GALLERY ADMIN</a></li>
+      </ul></div>
+            
+                    <div id="main">
+                    <div align="center" style="background-color:grey">
+            <button class = "gallery_button" onclick="addImgPopup(this)"> <b>Add Image</b></button>
+            </div>
+                        <div class="gallery">
+                        <div id="img-container""></div> 
+                        </div>
+                    </div>  
+                       <div id="myModal" class="modal">
+                          
+                            <h2> You can Edit/Delete image here!</h2>
+                            <span class="closeN">&times;</span>
+              <div class = "intro">
+              <form id= "Image-details" class = "Card">
+              <h3> <font color = "#E67E22">Image Informations</font></h3>
+              <ul>
+              <label id="value">Image URL: </label>
+             <input type="text" id="url" style="margin-left:30px">
+              </ul>
+              <ul>
+              <label id="value">Image Name: </label>
+              <input type="text" id="name" style="margin-left:23px">
+              </ul>
+              <ul>
+                    <label id="value">Information: </label>
+                    <input type="text" id="information" style="margin-left:29px;">      
+              </ul>
+              <ul>
+              <label id="value">Uploaded Date: </label>
+              <input type="date" id="uDate" value="yyyy/-MM-dd" style="margin-left:9px; width:250px"> </ul>
+              <input type="button" class = "delete gallery_button" value="Delete Image">
+              <input type="button" class = "edit gallery_button shiftRight" value="Edit Info" id="btn2">
+              <img class="modal-content" id="img01">
+              </form>
+            </div>
+             </div>
+                          <div id="addImgModal" class="modal" align="center"> 
+                          <h2 style="color:white"> You can Add image here</h2>
+                          <span class="closeN">&times;</span>
+                         
+                               <div class = "intro">
+                                <form id= "Image-details" class = "Card">
+                                <h3> <font color = "#E67E22">Please provide Image information to add!</font></h3>
+                                <ul >
+                                <label style="color:white" id="value">Image URL: </label>
+                               <input type="text" id="url2" style="margin-left:30px">
+                                </ul>
+                                <ul>
+                                <label style="color:white" id="value">Image Name: </label>
+                                <input type="text" id="name2" style="margin-left:23px">
+                                </ul>
+                                <ul>
+                                      <label style="color:white" id="value">Information: </label>
+                                      <input type="text" id="information2" style="margin-left:29px">      
+                                </ul>
+                                <ul>
+                                <label style="color:white" id="value">Uploaded Date: </label>
+                                <input type="date" id="uDate2" value="dd/mm/yyyy" style="margin-left:9px; width:250px"> </ul>
+                                <br>
+                                <input type="button" class = "gallery_button" value="submit" onclick="addImgfn(this)" id="btnOK">
+                          </form>
+                          </div>
+                         </div>
+ 
+            </div>
+            </div>
+            </div> 
+            </div>
+        </div>
+        <script src = "galleryadmin.js"></script>  
+        </body>
+</html>
