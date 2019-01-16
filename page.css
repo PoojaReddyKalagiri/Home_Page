@@ -4,19 +4,19 @@
   
 }
 .bgimg{
-  background-image:url('pexels-photo-1229861.jpeg');
+  background-image:url('pics/pexels-photo-1229861.jpeg');
   background-size:100% 100%;
   width:100%;
   height:100vh;
 }
 .contactimg{
-  background-image:url('free-outstanding-contact-me-vectors.jpg');
+  background-image:url('pics/free-outstanding-contact-me-vectors.jpg');
   background-size:100% 100%;
   width:100%;
   height:100vh;
 }
 .aboutimg{
-  background-image:url('5024468_orig.png');
+  background-image:url('pics/5024468_orig.png');
   background-repeat:no-repeat;
   background-size:100% 140%;
   width:100%;
